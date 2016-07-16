@@ -19,31 +19,30 @@
     // 创建四个子tabbar
     // 1. 首页
     UIViewController *home = [[UIViewController alloc]init];
-    home.view.backgroundColor = TWRandomColor ;
-    home.tabBarItem.title = @"首页";
-    home.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
-    [self addChildViewController:home];
+    [self addChildController:home withTitile:@"首页" andImage:[UIImage imageNamed:@"tabbar_home"] andSelectedImage:[UIImage imageNamed:@"tabbar_home_selected"]];
     
     UIViewController *message = [[UIViewController alloc]init];
-    message.view.backgroundColor = TWRandomColor ;
-    message.tabBarItem.title = @"消息";
-    message.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
-    [self addChildViewController:message];
+    [self addChildController:message withTitile:@"消息" andImage:[UIImage imageNamed:@"tabbar_message_center"] andSelectedImage:[UIImage imageNamed:@"tabbar_message_center_selected"]];
+    
+
     
     UIViewController *discover = [[UIViewController alloc]init];
-    discover.view.backgroundColor = TWRandomColor ;
-    discover.tabBarItem.title = @"发现";
-    discover.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
-    [self addChildViewController:discover];
+    [self addChildController:discover withTitile:@"发现" andImage:[UIImage imageNamed:@"tabbar_discover"] andSelectedImage:[UIImage imageNamed:@"tabbar_discover_selected"]];
     
     UIViewController *me = [[UIViewController alloc]init];
-    me.view.backgroundColor = TWRandomColor ;
-    me.tabBarItem.title = @"我";
-    me.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
-    [self addChildViewController:me];
+    [self addChildController:me withTitile:@"我" andImage:[UIImage imageNamed:@"tabbar_profile"] andSelectedImage:[UIImage imageNamed:@"tabbar_profile_selected"]];
     
 }
 
+-(void)addChildController:(UIViewController *)controller withTitile:(NSString *)title andImage:(UIImage *)image andSelectedImage:(UIImage *)selectedImage
+{
+    controller.view.backgroundColor = TWRandomColor ;
+    controller.tabBarItem.title = title;
+    controller.tabBarItem.image = image;
+    selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    controller.tabBarItem.selectedImage = selectedImage ;
+    [self addChildViewController:controller];
+}
 
 
 
