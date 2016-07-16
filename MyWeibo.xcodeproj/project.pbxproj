@@ -13,6 +13,7 @@
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
 		18737EF11D37E3650039A71F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EF01D37E3650039A71F /* MyWeiboUITests.m */; };
+		18F71FF41D39E58700FA604F /* TWTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F71FF31D39E58700FA604F /* TWTabbarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		18737EEC1D37E3650039A71F /* MyWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18737EF01D37E3650039A71F /* MyWeiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeiboUITests.m; sourceTree = "<group>"; };
 		18737EF21D37E3650039A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F71FF21D39E58700FA604F /* TWTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabbarViewController.h; sourceTree = "<group>"; };
+		18F71FF31D39E58700FA604F /* TWTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabbarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				18737ECF1D37E3650039A71F /* AppDelegate.m */,
 				18737ED11D37E3650039A71F /* ViewController.h */,
 				18737ED21D37E3650039A71F /* ViewController.m */,
+				18F71FF21D39E58700FA604F /* TWTabbarViewController.h */,
+				18F71FF31D39E58700FA604F /* TWTabbarViewController.m */,
 				18737ED71D37E3650039A71F /* Assets.xcassets */,
 				18737EDC1D37E3650039A71F /* Info.plist */,
 				18737ECB1D37E3650039A71F /* Supporting Files */,
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18737ED31D37E3650039A71F /* ViewController.m in Sources */,
+				18F71FF41D39E58700FA604F /* TWTabbarViewController.m in Sources */,
 				18737ED01D37E3650039A71F /* AppDelegate.m in Sources */,
 				18737ECD1D37E3650039A71F /* main.m in Sources */,
 			);

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "TWTabbarViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,8 +18,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    application.statusBarHidden = NO ;
+    
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
-    UITabBarController *tabVC = [[UITabBarController alloc]init];
+    TWTabbarViewController *tabVC = [[TWTabbarViewController alloc]init];
     self.window.rootViewController = tabVC ;
     [self.window makeKeyAndVisible];
 
