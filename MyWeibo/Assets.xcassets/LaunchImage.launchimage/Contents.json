@@ -22,6 +22,7 @@
       "idiom" : "iphone",
       "filename" : "Default@2x.png",
       "extent" : "full-screen",
+      "unassigned" : true,
       "scale" : "2x"
     }
   ],

@@ -11,7 +11,6 @@
 		18737ED01D37E3650039A71F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737ECF1D37E3650039A71F /* AppDelegate.m */; };
 		18737ED31D37E3650039A71F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737ED21D37E3650039A71F /* ViewController.m */; };
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
-		18737EDB1D37E3650039A71F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED91D37E3650039A71F /* LaunchScreen.storyboard */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
 		18737EF11D37E3650039A71F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EF01D37E3650039A71F /* MyWeiboUITests.m */; };
 /* End PBXBuildFile section */
@@ -41,7 +40,6 @@
 		18737ED11D37E3650039A71F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		18737ED21D37E3650039A71F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		18737ED71D37E3650039A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18737EDA1D37E3650039A71F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18737EDC1D37E3650039A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18737EE11D37E3650039A71F /* MyWeiboTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeiboTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18737EE51D37E3650039A71F /* MyWeiboTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeiboTests.m; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				18737ED11D37E3650039A71F /* ViewController.h */,
 				18737ED21D37E3650039A71F /* ViewController.m */,
 				18737ED71D37E3650039A71F /* Assets.xcassets */,
-				18737ED91D37E3650039A71F /* LaunchScreen.storyboard */,
 				18737EDC1D37E3650039A71F /* Info.plist */,
 				18737ECB1D37E3650039A71F /* Supporting Files */,
 			);
@@ -240,7 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18737EDB1D37E3650039A71F /* LaunchScreen.storyboard in Resources */,
 				18737ED81D37E3650039A71F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,17 +298,6 @@
 			targetProxy = 18737EED1D37E3650039A71F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		18737ED91D37E3650039A71F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18737EDA1D37E3650039A71F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		18737EF31D37E3650039A71F /* Debug */ = {
@@ -401,7 +386,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shuoying.MyWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,7 +399,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MyWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shuoying.MyWeibo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,6 +473,7 @@
 				18737EF71D37E3650039A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18737EF81D37E3650039A71F /* Build configuration list for PBXNativeTarget "MyWeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +482,7 @@
 				18737EFA1D37E3650039A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18737EFB1D37E3650039A71F /* Build configuration list for PBXNativeTarget "MyWeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +491,7 @@
 				18737EFD1D37E3650039A71F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
