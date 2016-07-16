@@ -21,22 +21,22 @@
     UIViewController *home = [[UIViewController alloc]init];
     home.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(255)/255.0 green:arc4random_uniform(255)/255.0 blue:arc4random_uniform(255)/255.0 alpha:1.0f];
     home.tabBarItem.title = @"首页";
-    home.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_home"];
+    home.tabBarItem.image = [UIImage imageNamed:@"tabbar_home"];
     [self addChildViewController:home];
     
     UIViewController *message = [[UIViewController alloc]init];
     message.tabBarItem.title = @"消息";
-    message.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_message_center"];
+    message.tabBarItem.image = [UIImage imageNamed:@"tabbar_message_center"];
     [self addChildViewController:message];
     
     UIViewController *discover = [[UIViewController alloc]init];
     discover.tabBarItem.title = @"发现";
-    discover.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_discover"];
+    discover.tabBarItem.image = [UIImage imageNamed:@"tabbar_discover"];
     [self addChildViewController:discover];
     
     UIViewController *me = [[UIViewController alloc]init];
     me.tabBarItem.title = @"我";
-    me.tabBarItem.selectedImage = [UIImage imageNamed:@"tabbar_profile"];
+    me.tabBarItem.image = [UIImage imageNamed:@"tabbar_profile"];
     [self addChildViewController:me];
     
 }
