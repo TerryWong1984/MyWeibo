@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1862739A1D3AFAE000648FBD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 186273991D3AFAE000648FBD /* UIImage+Extension.m */; };
 		18737ECD1D37E3650039A71F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737ECC1D37E3650039A71F /* main.m */; };
 		18737ED01D37E3650039A71F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737ECF1D37E3650039A71F /* AppDelegate.m */; };
 		18737ED31D37E3650039A71F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737ED21D37E3650039A71F /* ViewController.m */; };
@@ -35,6 +36,8 @@
 
 /* Begin PBXFileReference section */
 		185FF3E61D39F76500018518 /* MyWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWeibo.pch; sourceTree = "<group>"; };
+		186273981D3AFAE000648FBD /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		186273991D3AFAE000648FBD /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		18737EC81D37E3650039A71F /* MyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18737ECC1D37E3650039A71F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		18737ECE1D37E3650039A71F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 				18737ECF1D37E3650039A71F /* AppDelegate.m */,
 				18737ED11D37E3650039A71F /* ViewController.h */,
 				18737ED21D37E3650039A71F /* ViewController.m */,
+				186273981D3AFAE000648FBD /* UIImage+Extension.h */,
+				186273991D3AFAE000648FBD /* UIImage+Extension.m */,
 				18F71FF21D39E58700FA604F /* TWTabbarViewController.h */,
 				18F71FF31D39E58700FA604F /* TWTabbarViewController.m */,
 				18737ED71D37E3650039A71F /* Assets.xcassets */,
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1862739A1D3AFAE000648FBD /* UIImage+Extension.m in Sources */,
 				18737ED31D37E3650039A71F /* ViewController.m in Sources */,
 				18F71FF41D39E58700FA604F /* TWTabbarViewController.m in Sources */,
 				18737ED01D37E3650039A71F /* AppDelegate.m in Sources */,
