@@ -7,6 +7,10 @@
 //
 
 #import "TWTabbarViewController.h"
+#import "DiscoverTableViewController.h"
+#import "HomeTableViewController.h"
+#import "MeTableViewController.h"
+#import "MessageTableViewController.h"
 
 @interface TWTabbarViewController ()
 
@@ -18,26 +22,27 @@
     [super viewDidLoad];
     // 创建四个子tabbar
     // 1. 首页
-    UIViewController *home = [[UIViewController alloc]init];
+    HomeTableViewController *home = [[HomeTableViewController alloc]init];
     [self addChildController:home withTitile:@"首页" andImage:[UIImage imageWithName:@"tabbar_home"] andSelectedImage:[UIImage imageWithName:@"tabbar_home_selected"]];
     
-    UIViewController *message = [[UIViewController alloc]init];
+    MessageTableViewController *message = [[MessageTableViewController alloc]init];
     [self addChildController:message withTitile:@"消息" andImage:[UIImage imageWithName:@"tabbar_message_center"] andSelectedImage:[UIImage imageWithName:@"tabbar_message_center_selected"]];
     
-
-    
-    UIViewController *discover = [[UIViewController alloc]init];
+    DiscoverTableViewController *discover = [[DiscoverTableViewController alloc]init];
     [self addChildController:discover withTitile:@"发现" andImage:[UIImage imageWithName:@"tabbar_discover"] andSelectedImage:[UIImage imageWithName:@"tabbar_discover_selected"]];
     
-    UIViewController *me = [[UIViewController alloc]init];
+    MeTableViewController *me = [[MeTableViewController alloc]init];
     [self addChildController:me withTitile:@"我" andImage:[UIImage imageWithName:@"tabbar_profile"] andSelectedImage:[UIImage imageWithName:@"tabbar_profile_selected"]];
     
 }
 
 -(void)addChildController:(UIViewController *)controller withTitile:(NSString *)title andImage:(UIImage *)image andSelectedImage:(UIImage *)selectedImage
 {
+    // 添加导航控制器
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
+    
     controller.view.backgroundColor = TWRandomColor ;
-    controller.tabBarItem.title = title;
+    controller.title = title;
     controller.tabBarItem.image = image;
     
     if(IOS7)
@@ -45,7 +50,7 @@
      selectedImage = [selectedImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     controller.tabBarItem.selectedImage = selectedImage ;
-    [self addChildViewController:controller];
+    [self addChildViewController:nav];
 }
 
 
