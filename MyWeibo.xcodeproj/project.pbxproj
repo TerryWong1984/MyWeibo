@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1866CD211D3BA32C006DF599 /* TWNavigationController.m */; };
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
 		18737EF11D37E3650039A71F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EF01D37E3650039A71F /* MyWeiboUITests.m */; };
@@ -39,6 +40,8 @@
 
 /* Begin PBXFileReference section */
 		185FF3E61D39F76500018518 /* MyWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWeibo.pch; sourceTree = "<group>"; };
+		1866CD201D3BA32C006DF599 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
+		1866CD211D3BA32C006DF599 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
 		18737EC81D37E3650039A71F /* MyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18737ED71D37E3650039A71F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18737EDC1D37E3650039A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -249,6 +252,8 @@
 		18FC8F5B1D3B9ED90049C4B3 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1866CD201D3BA32C006DF599 /* TWNavigationController.h */,
+				1866CD211D3BA32C006DF599 /* TWNavigationController.m */,
 				18FC8F5E1D3B9ED90049C4B3 /* TWTabbarViewController.h */,
 				18FC8F5F1D3B9ED90049C4B3 /* TWTabbarViewController.m */,
 			);
@@ -473,6 +478,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */,
 				18FC8F761D3B9ED90049C4B3 /* TWTabbarViewController.m in Sources */,
 				18FC8F741D3B9ED90049C4B3 /* UIImage+Extension.m in Sources */,
 				18FC8F771D3B9ED90049C4B3 /* AppDelegate.m in Sources */,

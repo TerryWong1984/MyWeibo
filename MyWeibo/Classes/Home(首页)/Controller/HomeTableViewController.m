@@ -50,4 +50,13 @@
     return cell ;
 }
 
+
+#pragma mark - TableViewDelegate
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *newVC = [[UIViewController alloc]init];
+    newVC.view.backgroundColor = [UIColor redColor];
+    [self.navigationController pushViewController:newVC animated:YES];
+}
+
 @end

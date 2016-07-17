@@ -11,6 +11,7 @@
 #import "HomeTableViewController.h"
 #import "MeTableViewController.h"
 #import "MessageTableViewController.h"
+#import "TWNavigationController.h"
 
 @interface TWTabbarViewController ()
 
@@ -39,7 +40,7 @@
 -(void)addChildController:(UIViewController *)controller withTitile:(NSString *)title andImage:(UIImage *)image andSelectedImage:(UIImage *)selectedImage
 {
     // 添加导航控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
+    TWNavigationController *nav = [[TWNavigationController alloc]initWithRootViewController:controller];
     
     controller.view.backgroundColor = TWRandomColor ;
     controller.title = title;
