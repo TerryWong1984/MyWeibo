@@ -17,12 +17,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    // 创建BarItem
+    self.navigationItem.leftBarButtonItem = [self createBarButtonItemWithNormalImage:@"navigationbar_friendsearch" andHightedImage:@"navigationbar_friendsearch_highlighted" andAction:@selector(searchFriend)];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = [self createBarButtonItemWithNormalImage:@"navigationbar_pop" andHightedImage:@"navigationbar_pop_highlighted" andAction:@selector(scan)];
+
+
 }
+
+
+-(UIBarButtonItem *)createBarButtonItemWithNormalImage:(NSString *)imageName andHightedImage:(NSString *)hightImageName andAction:(SEL)action
+{
+    UIButton *button = [[UIButton alloc]init];
+    [button setImage:[UIImage imageWithName:imageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageWithName:hightImageName] forState:UIControlStateHighlighted];
+    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
+    button.size = button.currentImage.size;
+    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithCustomView:button];
+    return barItem ;
+    
+}
+
+
+-(void)searchFriend
+{
+    
+}
+
+-(void)scan
+{
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

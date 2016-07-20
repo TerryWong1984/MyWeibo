@@ -11,6 +11,7 @@
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
 		18737EF11D37E3650039A71F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EF01D37E3650039A71F /* MyWeiboUITests.m */; };
+		18F7ABF91D3E73D800976A84 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7ABF81D3E73D800976A84 /* UIView+Extension.m */; };
 		18FC8F721D3B9ED90049C4B3 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC8F4E1D3B9ED90049C4B3 /* DiscoverTableViewController.m */; };
 		18FC8F731D3B9ED90049C4B3 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC8F541D3B9ED90049C4B3 /* HomeTableViewController.m */; };
 		18FC8F741D3B9ED90049C4B3 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18FC8F5A1D3B9ED90049C4B3 /* UIImage+Extension.m */; };
@@ -51,6 +52,8 @@
 		18737EEC1D37E3650039A71F /* MyWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18737EF01D37E3650039A71F /* MyWeiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeiboUITests.m; sourceTree = "<group>"; };
 		18737EF21D37E3650039A71F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18F7ABF71D3E73D800976A84 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		18F7ABF81D3E73D800976A84 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		18FC8F4D1D3B9ED90049C4B3 /* DiscoverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverTableViewController.h; sourceTree = "<group>"; };
 		18FC8F4E1D3B9ED90049C4B3 /* DiscoverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverTableViewController.m; sourceTree = "<group>"; };
 		18FC8F531D3B9ED90049C4B3 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
@@ -243,6 +246,8 @@
 		18FC8F581D3B9ED90049C4B3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				18F7ABF71D3E73D800976A84 /* UIView+Extension.h */,
+				18F7ABF81D3E73D800976A84 /* UIView+Extension.m */,
 				18FC8F591D3B9ED90049C4B3 /* UIImage+Extension.h */,
 				18FC8F5A1D3B9ED90049C4B3 /* UIImage+Extension.m */,
 			);
@@ -478,6 +483,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F7ABF91D3E73D800976A84 /* UIView+Extension.m in Sources */,
 				1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */,
 				18FC8F761D3B9ED90049C4B3 /* TWTabbarViewController.m in Sources */,
 				18FC8F741D3B9ED90049C4B3 /* UIImage+Extension.m in Sources */,
