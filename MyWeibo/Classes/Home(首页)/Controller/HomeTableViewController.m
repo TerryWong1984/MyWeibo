@@ -18,25 +18,13 @@
     [super viewDidLoad];
     
     // 创建BarItem
-    self.navigationItem.leftBarButtonItem = [self createBarButtonItemWithNormalImage:@"navigationbar_friendsearch" andHightedImage:@"navigationbar_friendsearch_highlighted" andAction:@selector(searchFriend)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithNormalImage:@"navigationbar_friendsearch" andHightedImage:@"navigationbar_friendsearch_highlighted" andAction:@selector(searchFriend) andTarget:self];
     
-    self.navigationItem.rightBarButtonItem = [self createBarButtonItemWithNormalImage:@"navigationbar_pop" andHightedImage:@"navigationbar_pop_highlighted" andAction:@selector(scan)];
-
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithNormalImage:@"navigationbar_pop" andHightedImage:@"navigationbar_pop_highlighted" andAction:@selector(scan) andTarget:self];
 
 }
 
 
--(UIBarButtonItem *)createBarButtonItemWithNormalImage:(NSString *)imageName andHightedImage:(NSString *)hightImageName andAction:(SEL)action
-{
-    UIButton *button = [[UIButton alloc]init];
-    [button setImage:[UIImage imageWithName:imageName] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageWithName:hightImageName] forState:UIControlStateHighlighted];
-    [button addTarget:self action:action forControlEvents:UIControlEventTouchUpInside];
-    button.size = button.currentImage.size;
-    UIBarButtonItem *barItem = [[UIBarButtonItem alloc]initWithCustomView:button];
-    return barItem ;
-    
-}
 
 
 -(void)searchFriend

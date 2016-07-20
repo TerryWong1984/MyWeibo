@@ -16,6 +16,7 @@
 #define IOS7 ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0)
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
+#import "UIBarButtonItem+Extension.h"
 
 #endif /* MyWeibo_pch */
 
