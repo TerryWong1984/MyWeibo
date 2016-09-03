@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *rightButton = [[UIButton alloc]init];
+ 
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"写私信" style:UIBarButtonItemStyleDone target:self action:nil];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

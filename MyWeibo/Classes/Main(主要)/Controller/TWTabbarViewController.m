@@ -42,7 +42,7 @@
     // 添加导航控制器
     TWNavigationController *nav = [[TWNavigationController alloc]initWithRootViewController:controller];
     
-    controller.view.backgroundColor = TWRandomColor ;
+//    controller.view.backgroundColor = TWRandomColor ;
     controller.title = title;
     controller.tabBarItem.image = image;
     
