@@ -16,25 +16,46 @@
 
 +(void)initialize
 {
+
+   // 设置barItem主题
+   [self setupBarItemSchma];
+    
+    // 设置navigation主题
+    [self setupNavigationBarSchma];
+
+    
+}
+
++(void)setupBarItemSchma
+{
     UIBarButtonItem *apperance = [UIBarButtonItem appearance];
-    // 设置正常字体为黄色，高亮字体为红色，disable为灰色
     // 1) 正常
     NSMutableDictionary *textDic = [NSMutableDictionary dictionary];
-    textDic[UITextAttributeTextColor] = [UIColor orangeColor];
-    textDic[UITextAttributeFont] = [UIFont systemFontOfSize:15];
+    textDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textDic[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [apperance setTitleTextAttributes:textDic forState:UIControlStateNormal];
     
     // 2) 高亮
     NSMutableDictionary *textDicHighted = [NSMutableDictionary dictionary];
-    textDicHighted[UITextAttributeTextColor] = [UIColor redColor];
-    textDicHighted[UITextAttributeFont] = [UIFont systemFontOfSize:15];
+    textDicHighted[NSForegroundColorAttributeName] = [UIColor redColor];
+    textDicHighted[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [apperance setTitleTextAttributes:textDic forState:UIControlStateHighlighted];
     
     // 2) disable
     NSMutableDictionary *textDicDisabled = [NSMutableDictionary dictionary];
-    textDicDisabled[UITextAttributeTextColor] = [UIColor grayColor];
-    textDicDisabled[UITextAttributeFont] = [UIFont systemFontOfSize:15];
+    textDicDisabled[NSForegroundColorAttributeName] = [UIColor grayColor];
+    textDicDisabled[NSFontAttributeName] = [UIFont systemFontOfSize:15];
     [apperance setTitleTextAttributes:textDic forState:UIControlStateDisabled];
+}
+
++(void)setupNavigationBarSchma
+{
+    UINavigationBar *apperance = [UINavigationBar appearance];
+    [apperance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background_os7"] forBarMetrics:UIBarMetricsDefault];
+    NSMutableDictionary *textDic = [NSMutableDictionary dictionary];
+    textDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textDic[NSFontAttributeName] = [UIFont systemFontOfSize:20];
+    [apperance setTitleTextAttributes:textDic];
     
     
 }
