@@ -51,10 +51,17 @@
 +(void)setupNavigationBarSchma
 {
     UINavigationBar *apperance = [UINavigationBar appearance];
+    if (!IOS7) {
     [apperance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background_os7"] forBarMetrics:UIBarMetricsDefault];
+    }
+
     NSMutableDictionary *textDic = [NSMutableDictionary dictionary];
     textDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
     textDic[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
+    NSShadow *shadow = [[NSShadow alloc]init];
+    shadow.shadowColor = [UIColor redColor];
+    shadow.shadowOffset = CGSizeMake(0, 0);
+    textDic[NSShadowAttributeName] = shadow ;
     [apperance setTitleTextAttributes:textDic];
     
     
