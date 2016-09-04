@@ -54,7 +54,7 @@
     [apperance setBackgroundImage:[UIImage imageWithName:@"navigationbar_background_os7"] forBarMetrics:UIBarMetricsDefault];
     NSMutableDictionary *textDic = [NSMutableDictionary dictionary];
     textDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    textDic[NSFontAttributeName] = [UIFont systemFontOfSize:20];
+    textDic[NSFontAttributeName] = [UIFont boldSystemFontOfSize:20];
     [apperance setTitleTextAttributes:textDic];
     
     
