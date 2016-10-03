@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1825C0C61DA1FA9100A018FD /* TWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825C0C51DA1FA9100A018FD /* TWSearchBar.m */; };
 		1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1866CD211D3BA32C006DF599 /* TWNavigationController.m */; };
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1825C0C41DA1FA9100A018FD /* TWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSearchBar.h; sourceTree = "<group>"; };
+		1825C0C51DA1FA9100A018FD /* TWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSearchBar.m; sourceTree = "<group>"; };
 		185FF3E61D39F76500018518 /* MyWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWeibo.pch; sourceTree = "<group>"; };
 		1866CD201D3BA32C006DF599 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
 		1866CD211D3BA32C006DF599 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 		18FC8F501D3B9ED90049C4B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1825C0C41DA1FA9100A018FD /* TWSearchBar.h */,
+				1825C0C51DA1FA9100A018FD /* TWSearchBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 			files = (
 				18F7ABF91D3E73D800976A84 /* UIView+Extension.m in Sources */,
 				1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */,
+				1825C0C61DA1FA9100A018FD /* TWSearchBar.m in Sources */,
 				18FC8F761D3B9ED90049C4B3 /* TWTabbarViewController.m in Sources */,
 				18FC8F741D3B9ED90049C4B3 /* UIImage+Extension.m in Sources */,
 				18FC8F771D3B9ED90049C4B3 /* AppDelegate.m in Sources */,

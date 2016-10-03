@@ -7,6 +7,7 @@
 //
 
 #import "DiscoverTableViewController.h"
+#import "TWSearchBar.h"
 
 @interface DiscoverTableViewController ()
 
@@ -17,20 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // 搜索框
-    UITextField *search = [[UITextField alloc] init];
-    [search setBackground:[UIImage resizeWithName:@"searchbar_textfield_background"]];
+    TWSearchBar *search = [[TWSearchBar alloc]init];
     search.width = 300 ;
     search.height = 30 ;
-    // 添加搜索框搜索图片
-    UIImageView *leftView = [[UIImageView alloc]init] ;
-    leftView.width = search.height ;
-    leftView.height = search.height ;
-    leftView.image = [UIImage imageWithName:@"searchbar_textfield_search_icon"];
-    search.leftView = leftView;
-    search.leftView.contentMode = UIViewContentModeCenter ;
-    search.leftViewMode =  UITextFieldViewModeAlways ;
-    
-    search.clearButtonMode = UITextFieldViewModeAlways ;
     
     self.navigationItem.titleView = search ;
     
