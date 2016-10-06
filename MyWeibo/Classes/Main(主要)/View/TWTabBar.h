@@ -10,4 +10,6 @@
 
 @interface TWTabBar : UITabBar
 
+@property (nonatomic,strong)UIButton *button ;
+
 @end
