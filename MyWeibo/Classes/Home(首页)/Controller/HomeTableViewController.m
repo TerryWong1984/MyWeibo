@@ -7,6 +7,8 @@
 //
 
 #import "HomeTableViewController.h"
+#import "TitleButton.h"
+
 
 @interface HomeTableViewController ()
 
@@ -21,11 +23,33 @@
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithNormalImage:@"navigationbar_friendsearch" andHightedImage:@"navigationbar_friendsearch_highlighted" andAction:@selector(searchFriend) andTarget:self];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithNormalImage:@"navigationbar_pop" andHightedImage:@"navigationbar_pop_highlighted" andAction:@selector(scan) andTarget:self];
-
+    
+    TitleButton *titleButton = [[TitleButton alloc] init];
+    titleButton.width = 100 ;
+    titleButton.height = 35 ;
+    [titleButton addTarget:self action:@selector(shouMenu:) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
 }
 
+-(void)shouMenu:(TitleButton *)titleButton
+{
+    // 换成箭头向上
+    [titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    
+    // 弹出菜单
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    button.backgroundColor = [UIColor redColor];
+    
+    HMPopMenu *menu = [[HMPopMenu alloc ] initWithContentView:button];
+    menu.delegate = self;
+    [menu showInRect:CGRectMake(100, 100, 100, 100)];
+}
 
-
+- (void)popMenuDidDismissed:(HMPopMenu *)popMenu
+{
+    TitleButton *titleButton = (TitleButton *)self.navigationItem.titleView;
+    [titleButton setImage:[UIImage imageWithName:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+}
 
 -(void)searchFriend
 {

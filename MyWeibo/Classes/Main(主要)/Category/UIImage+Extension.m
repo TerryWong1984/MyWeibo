@@ -28,7 +28,7 @@
 
 +(UIImage *)resizeWithName:(NSString *)name
 {
-    UIImage *image = [UIImage imageNamed:name];
+    UIImage *image = [UIImage imageWithName:name];
     UIImage *image1 = [image stretchableImageWithLeftCapWidth:image.size.width * 0.5 topCapHeight:image.size.height * 0.5];
     return image1 ;
 }

@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1825C0C61DA1FA9100A018FD /* TWSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825C0C51DA1FA9100A018FD /* TWSearchBar.m */; };
+		1825C0CC1DA2A33700A018FD /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1825C0CB1DA2A33700A018FD /* TitleButton.m */; };
+		183330561DA3419100CEFF9E /* HMPopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 183330551DA3419100CEFF9E /* HMPopMenu.m */; };
+		183330591DA4732F00CEFF9E /* TWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 183330581DA4732F00CEFF9E /* TWTabBar.m */; };
 		1866CD221D3BA32C006DF599 /* TWNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1866CD211D3BA32C006DF599 /* TWNavigationController.m */; };
 		18737ED81D37E3650039A71F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18737ED71D37E3650039A71F /* Assets.xcassets */; };
 		18737EE61D37E3650039A71F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18737EE51D37E3650039A71F /* MyWeiboTests.m */; };
@@ -44,6 +47,12 @@
 /* Begin PBXFileReference section */
 		1825C0C41DA1FA9100A018FD /* TWSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSearchBar.h; sourceTree = "<group>"; };
 		1825C0C51DA1FA9100A018FD /* TWSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSearchBar.m; sourceTree = "<group>"; };
+		1825C0CA1DA2A33700A018FD /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
+		1825C0CB1DA2A33700A018FD /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
+		183330541DA3419100CEFF9E /* HMPopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMPopMenu.h; sourceTree = "<group>"; };
+		183330551DA3419100CEFF9E /* HMPopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMPopMenu.m; sourceTree = "<group>"; };
+		183330571DA4732F00CEFF9E /* TWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWTabBar.h; sourceTree = "<group>"; };
+		183330581DA4732F00CEFF9E /* TWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWTabBar.m; sourceTree = "<group>"; };
 		185FF3E61D39F76500018518 /* MyWeibo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWeibo.pch; sourceTree = "<group>"; };
 		1866CD201D3BA32C006DF599 /* TWNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWNavigationController.h; sourceTree = "<group>"; };
 		1866CD211D3BA32C006DF599 /* TWNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWNavigationController.m; sourceTree = "<group>"; };
@@ -235,6 +244,10 @@
 		18FC8F561D3B9ED90049C4B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				183330541DA3419100CEFF9E /* HMPopMenu.h */,
+				183330551DA3419100CEFF9E /* HMPopMenu.m */,
+				1825C0CA1DA2A33700A018FD /* TitleButton.h */,
+				1825C0CB1DA2A33700A018FD /* TitleButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,6 +308,8 @@
 		18FC8F651D3B9ED90049C4B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				183330571DA4732F00CEFF9E /* TWTabBar.h */,
+				183330581DA4732F00CEFF9E /* TWTabBar.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,6 +515,9 @@
 				18FC8F741D3B9ED90049C4B3 /* UIImage+Extension.m in Sources */,
 				18FC8F771D3B9ED90049C4B3 /* AppDelegate.m in Sources */,
 				18FC8F791D3B9ED90049C4B3 /* MessageTableViewController.m in Sources */,
+				183330561DA3419100CEFF9E /* HMPopMenu.m in Sources */,
+				183330591DA4732F00CEFF9E /* TWTabBar.m in Sources */,
+				1825C0CC1DA2A33700A018FD /* TitleButton.m in Sources */,
 				18FCD9B81D3FC2D000B1502D /* UIBarButtonItem+Extension.m in Sources */,
 				18FC8F731D3B9ED90049C4B3 /* HomeTableViewController.m in Sources */,
 				18FC8F781D3B9ED90049C4B3 /* main.m in Sources */,

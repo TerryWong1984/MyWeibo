@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HMPopMenu.h"
 
-@interface HomeTableViewController : UITableViewController
+@interface HomeTableViewController : UITableViewController<HMPopMenuDelegate>
 
 @end

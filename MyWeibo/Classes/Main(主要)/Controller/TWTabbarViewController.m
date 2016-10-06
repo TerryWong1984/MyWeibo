@@ -12,6 +12,7 @@
 #import "MeTableViewController.h"
 #import "MessageTableViewController.h"
 #import "TWNavigationController.h"
+#import "TWTabBar.h"
 
 @interface TWTabbarViewController ()
 
@@ -35,7 +36,11 @@
     MeTableViewController *me = [[MeTableViewController alloc]init];
     [self addChildController:me withTitile:@"我" andImage:[UIImage imageWithName:@"tabbar_profile"] andSelectedImage:[UIImage imageWithName:@"tabbar_profile_selected"]];
     
+    TWTabBar *twTab = [[TWTabBar alloc]init];
+    [self setValue:twTab forKey:@"tabBar"];
+    
 }
+
 
 -(void)addChildController:(UIViewController *)controller withTitile:(NSString *)title andImage:(UIImage *)image andSelectedImage:(UIImage *)selectedImage
 {
@@ -45,6 +50,10 @@
 //    controller.view.backgroundColor = TWRandomColor ;
     controller.title = title;
     controller.tabBarItem.image = image;
+    
+    NSMutableDictionary *textDic = [NSMutableDictionary dictionary];
+    textDic[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    [controller.tabBarItem setTitleTextAttributes:textDic forState:UIControlStateSelected];
     
     if(IOS7)
     {
